@@ -1,0 +1,62 @@
+@import './../utils/mixins.scss';
+
+.currentExhibitions {
+  margin-bottom: 120px;
+  @include contentPaddingInline;
+
+  @include onTablet {
+    @include pageGrid;
+    margin-bottom: 160px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 200px;
+  }
+}
+
+.currentExhibitions__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(28, 27, 41, 1);
+
+  @include onTablet {
+    grid-column: 1 / 5;
+    font-size: 40px;
+    margin-bottom: 75px;
+  }
+
+  @include onDesktop {
+    font-size: 48px;
+    grid-column: 1 / 7;
+  }
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 30px;
+  grid-column: 1 / -1;
+
+  @include onTablet {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center; 
+  }
+} 
+
+.currentExhibitions__button {
+  grid-column: 5 / -1;
+  display: flex;
+  justify-content: center;
+
+  @include onTablet {
+    margin-top: -810px;
+  }
+
+  @include onDesktop {
+    grid-column: 10 / -1;
+    margin-top: -880px;
+  }
+}

@@ -1,0 +1,9 @@
+.dropdown {
+  border: none;
+  background-color: rgba(63, 82, 82, 1);
+  color: rgba(241, 245, 244, 1);
+}
+
+.dropdown:focus {
+  outline: none;
+}

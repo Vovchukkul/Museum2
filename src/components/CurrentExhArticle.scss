@@ -1,0 +1,65 @@
+@import './../utils/mixins.scss';
+
+.currentExh {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  overflow: hidden;
+
+  @include onTablet {
+    max-width: 330px;
+  }
+
+  @include onDesktop {
+    max-width: 570px;
+  }
+}
+
+.currentExh__image {
+  height: 356px;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @include onTablet {
+    height: 420px;
+  }
+
+  @include onDesktop {
+    height: 484px;
+    width: 570px;
+  }
+}
+
+.currentExh__date {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(205, 77, 49, 1);
+  margin-bottom: 10px;
+}
+
+.currentExh__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(28, 27, 41, 1);
+  margin-bottom: 20px;
+
+  @include onTablet {
+    font-size: 24px;
+  }
+}
+
+.currenExh__description {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(80, 79, 94, 1);
+  margin-bottom: 30px;
+
+  @include onTablet {
+    max-width: 330px;
+  }
+
+  @include onDesktop {
+    max-width: 570px;
+    margin-bottom: 50px;
+  }
+}

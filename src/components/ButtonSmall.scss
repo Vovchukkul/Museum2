@@ -1,0 +1,28 @@
+@import './../utils/mixins.scss';
+
+.btn-s {
+  width: 280px;
+  height: 60px;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include hover(transform, scale(1.1));
+
+  @include onTablet {
+    width: 210px;
+  }
+
+  @include onDesktop {
+    width: 270px;
+  }
+}
+
+.btn-span-s {
+  font-size: 16px;
+  font-weight: 600;
+}

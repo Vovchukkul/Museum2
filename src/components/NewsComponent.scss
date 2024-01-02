@@ -1,0 +1,48 @@
+@import './../utils/mixins.scss';
+
+.news {
+  margin-bottom: 120px;
+  @include contentPaddingInline;
+  overflow: hidden;
+
+  position: relative;
+
+  @include onTablet {
+    margin-bottom: 160px; 
+  }
+
+  @include onDesktop {
+    margin-bottom: 200px;
+  }
+}
+
+.news__titler { 
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(28, 27, 41, 1);
+  margin-bottom: 60px;
+}
+
+.news__articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  @include onTablet {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.news__button { 
+  display: flex;
+  justify-content: center;
+
+  @include onTablet {
+    position: absolute;
+    top: -30px;
+    right: 40px;
+  }
+}

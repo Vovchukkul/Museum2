@@ -1,0 +1,64 @@
+@import './../utils/mixins.scss';
+
+.plan {
+  @include contentPaddingInline;
+  background-color: rgba(63, 82, 82, 1);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 90px;
+
+  @include onTablet {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+  }
+
+  @include onDesktop {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 110px;
+  }
+}
+
+.plan__title {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 700;
+  color: rgba(241, 245, 244, 1);
+  margin-bottom: 20px;
+
+  @include onTablet {
+    font-size: 72px;
+    max-width: 570px;
+  }
+
+  @include onDesktop {
+    font-size: 80px;
+    margin-bottom: 10px;
+  }
+}
+
+.plan__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(241, 245, 244, 1);
+  margin-bottom: 40px;
+
+  @include onTablet {
+    margin-bottom: 60px;
+    max-width: 450px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 50px;
+  }
+}
+
+.plan__desk-left {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+}

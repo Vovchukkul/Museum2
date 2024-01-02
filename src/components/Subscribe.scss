@@ -1,0 +1,92 @@
+@import './../utils/mixins.scss';
+
+.subscribe {
+  padding-inline: 20px;
+  margin-bottom: 80px;
+
+  @include contentPaddingInline;
+
+  @include onTablet {
+    margin-top: 160px;
+    margin-bottom: 128px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 200px;
+  }
+}
+
+.subscribe__title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(28, 27, 41, 1);
+  margin-bottom: 20px;
+
+  @include onTablet {
+    font-size: 40px;
+  }
+
+  @include onDesktop {
+    font-size: 48px;
+    width: 570px;
+  }
+}
+
+.subscribe__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(28, 27, 41, 1);
+  margin-bottom: 50px;
+
+  @include onTablet {
+    width: 570px;
+  }
+}
+
+.form {
+  margin-bottom: 30px;
+
+  @include onDesktop {
+    margin-bottom: 40px;
+  }
+}
+
+.input {
+  background-color: rgba(241, 245, 244, 1);
+  border: none;
+  border-bottom: 1px solid rgba(28, 27, 41, 1);
+  width: 100%;
+  padding-bottom: 3px;
+  margin-bottom: 40px;
+
+  @include onTablet {
+    width: 450px;
+  }
+}
+
+.input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(28, 27, 41, 1);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.subscribe__wrap {
+  display: flex;
+  flex-direction: column;
+
+  @include onDesktop {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.error__text {
+  color: red;
+  margin: 0;
+  margin-bottom: 10px;
+}

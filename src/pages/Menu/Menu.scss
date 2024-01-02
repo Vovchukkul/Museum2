@@ -1,0 +1,176 @@
+@import './../../utils/mixins.scss';
+
+.menu {
+  background-color: rgba(63, 82, 82, 1);
+  padding-inline: 20px;
+  height: 100vh;
+  @include contentPaddingInline;
+
+  @include onDesktop {
+    position: relative;
+  }
+}
+
+.menu__top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 50px;
+
+  @include onTablet {
+    margin-bottom: 30px;
+  }
+
+  @include onDesktop {
+    height: 90px;
+    margin-bottom: 20px;
+  }
+}
+
+.menu__top-bar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.close-icon {
+  background-image: url(./../../image/icons/close-icon.svg);
+  background-repeat: no-repeat;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.dropdown {
+  border: none;
+  background-color: rgba(63, 82, 82, 1);
+  color: rgba(241, 245, 244, 1);
+}
+
+.dropdown:focus {
+  outline: none;
+}
+
+.menu__middle {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include onTablet {
+    flex-direction: row;
+    gap: 123px;
+    margin-bottom: 50px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 70px;
+  }
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(241, 245, 244, 1);
+}
+
+.schedule-time {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(241, 245, 244, 1);
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(241, 245, 244, 1);
+}
+
+.address-location {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(241, 245, 244, 1);
+}
+
+.menu__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid rgba(241, 245, 244, 1);
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+
+  @include onTablet {
+    gap: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+
+  @include onDesktop {
+    gap: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(241, 245, 244, 1);
+
+  @include onTablet {
+    font-size: 48px;
+  }
+}
+
+.menu__bottom {
+  display: none;
+
+  @include onTablet {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  @include onDesktop {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.menu__bottom-img {
+  height: 466px;
+  width: 422px;
+
+  @include onDesktop {
+    height: 697px;
+    width: 694px;
+  }
+}
+
+.menu__left-right {
+  @include onDesktop {
+    display: flex;
+  }
+}
